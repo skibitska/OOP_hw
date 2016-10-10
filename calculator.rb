@@ -1,7 +1,5 @@
 require 'colorize'
 
-
-
 puts "What would you like to do?".black.on_white
 puts "[1] Addition"
 puts "[2] Substraction"
@@ -9,9 +7,6 @@ puts "[3] Multiplication"
 puts "[4] Division"
 puts "[5] BMI"
 operation = gets.to_i
-
-
-
 
 if operation == 1 || operation == 2 || operation == 3 || operation == 4
   puts "Enter first operand".red.on_white
@@ -26,7 +21,6 @@ else
    puts "Enter your height".red.on_white
    height = gets.to_f
 end
-
 
 result = case
 when operation == 1 
@@ -46,8 +40,7 @@ when operation == 5 then (weight/(height**2)).round(2)
 end
 
 if operation == 5 then index = result end
-     
-
+ 
 operation_name = case 
 when operation == 1 
   "Addition"
@@ -61,11 +54,9 @@ when operation == 5
   "BMI"
 end
 
-
  puts " "
  puts "#{operation_name } result: #{result}"
  puts " "
-
  
 if operation == 5 then
  BMIndex = case index
